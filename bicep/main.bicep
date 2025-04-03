@@ -332,6 +332,11 @@ module ilb 'modules/vnet/lb.bicep' = if(scenarioOption == 'Active-Active'){
           }
           privateIPAddressVersion: 'IPv4'
         }
+        "zones": [
+            "2",
+            "3",
+            "1"
+        ]
       }
     ]
     backendAddressPools: [
